@@ -1,0 +1,691 @@
+.al {
+    float: left !important;
+}
+
+.ar {
+    float: right !important;
+}
+
+.text-red {
+    color: #fe605d;
+}
+
+li {
+    list-style: none;
+}
+
+ul {
+    padding: 0px;
+}
+.clearfloat{
+    clear: both;
+}
+.block {
+    display: block;
+}
+.display-inline {
+    display: inline-block!important;
+}
+.overflow {
+    overflow: hidden;
+}
+/* Fonts sizes */
+.font12 {
+    font-size: 12px;
+    padding:0 8px;
+}
+
+.font15 {
+    font-size: 15px;
+}
+
+.font16 {
+    font-size: 16px;
+}
+
+.font23 {
+    font-size: 23px;
+}
+/* Fonts sizes end*/
+
+.paddingless {
+    padding: 0px;
+}
+
+.marginless {
+    margin: 0px;
+}
+
+a {
+    padding: 2px 5px;
+}
+
+a:hover {
+    border-radius: 5px;
+    background-color: #dadada;
+    padding: 2px 5px;
+}
+
+a.normal:hover {
+    background: none;
+    text-decoration: underline;
+    padding: 0px;
+}
+a.disabled,a.disabled:hover {
+    color: #b1b1b1;
+    font-weight: bold;
+    font-size: 12.5px;
+    background-color: transparent;
+}
+.container-fluid {
+    padding-left: 0px;
+}
+
+.csd-main-content {
+    height: 97%;
+}
+
+.maincontent {
+    margin-top: 10px !important;
+}
+
+.header {
+    height: 50px;
+    background: transparent;
+    width: 100%;
+}
+
+.paddingless {
+    padding: 0px;
+}
+
+.pg-header {
+    overflow: visible;
+}
+
+.greytext {
+    color: #818181;
+}
+
+.lineheight10 {
+    line-height: 10px;
+}
+
+.lineheight20 {
+    line-height: 20px;
+}
+
+.maincontent .main-footer {
+    bottom: 25px;
+    background: #f0f0f0;
+    height: 43px;
+    border-radius: 5px;
+}
+
+.modal-backdrop.in {
+    opacity: 0;
+}
+
+/* Left Nav Container */
+
+.aside-nav.actionlinks ul > li > a {
+    padding: 0px 7px;
+    display: inline-block;
+}
+
+.aside-nav.actionlinks ul > li > a:hover {
+    background: #dadada;
+}
+
+/* Main content topbar container */
+
+.topbar {
+    height: 80px;
+    position: fixed;
+    border-bottom: solid 1px #c7c7c7;
+}
+
+.topbar-blocks {
+    border-right: solid 1px #e6e6e6;
+    height: 80px;
+    color: #999;
+}
+
+.topbar-blocks .values {
+    font-size: 24px;
+    color: #737373;
+    display: block;
+}
+
+.topbar-blocks.topbarmenu:hover {
+    background: #f0f6fa;
+}
+
+.rightsection {
+    display: flex;
+    border-left: solid 1px #e6e6e6;
+}
+
+.rightsection .topbar-blocks:last-child {
+    border-right: none;
+}
+
+.topbar-blocks .caret {
+    border-top: 9px solid;
+    border-right: 5px solid transparent;
+    border-left: 5px solid transparent;
+    float: right;
+    margin-top: 12px;
+}
+
+/* Main content topbar left block*/
+
+.mini-card {
+    border-right: solid 1px #c7c7c7;
+    width: 250px;
+    height: 79px;
+    color: #434343;
+}
+
+.mini-card .title {
+    max-width: 178px;
+}
+
+.dashboard .mini-card li {
+    padding: 0px 4px;
+    font-size: 14px;
+}
+
+.dashboard .mini-card li .title {
+    font-size: 17px;
+}
+
+.dashboard .mini-card li a:hover {
+    background-color: none;
+    padding: 0px 2px;
+}
+
+.dashboard .mini-card li a,
+.dashboard .mini-card li span {
+    padding: 0px 2px;
+}
+
+.mini-card .popover {
+    left: 235px;
+    line-height: 18px;
+}
+
+.dashboard .mini-card:hover .popover {
+    display: block;
+}
+
+.popover {
+    min-width: 320px;
+    padding: 15px 15px 5px 15px;
+    box-shadow: 0 3px 4px rgba(0, 3, 2, .5);
+}
+/* Appointment modal */
+.appointmentModal .modal-body{
+    height: 450px;
+}
+.appointmentModal .searchfield .Select-arrow-zone{
+    display: none;
+}
+.appointmentModal .mini-card a, .appointmentModal .mini-card a:hover, .appointmentModal .medalert a, .appointmentModal .medalert a:hover{
+        padding: 2px 3px;
+}
+/* Appoinment modal minicard*/
+.appointmentModal .mini-card ul a, .appointmentModal .mini-card ul span {
+    padding: 0px 0xp 7px 0px;
+    max-width: 135px;
+    font-size: 14px;
+} 
+.appointmentModal .mini-card ul a.title{margin-left: -5px;}
+.appointmentModal #theta {
+    right: 0px;
+    top: -5px;
+}
+.appointmentModal .mini-card .count{
+    margin-top: 24px;
+    width: 46px;
+    line-height: 10px;
+    float: left;
+    right: 0px;
+}
+.appointmentModal .mini-card {
+    border-right: 0px;
+    width: 100%;
+}
+/* */
+
+.popover.sm {
+    width: 300px;
+}
+
+.popover.lg {
+    width: 500px;
+}
+
+.popover .module-title {
+    margin-top: 0px;
+    padding: 0px 0 7.5px 0;
+}
+
+/* Form section */
+
+form.patientinfo {
+    width: 600px;
+}
+
+form.patientinfo .input-group[class*="col-"] {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+form .title-only {
+    border-bottom: 1px solid #e2e3e4;
+    font-size: 20px
+}
+
+form.patientinfo .form-group {
+    margin-left: 30px;
+    margin-bottom: 10px;
+}
+
+.form-control {
+    height: 25px;
+}
+
+.form-group label span {
+    width: 11px;
+    position: absolute;
+    height: 10px;
+    font-size: 27px;
+    color: #525252;
+    margin-left: 10px;
+    line-height: 32px;
+    float: right;
+    display: inline-block;
+}
+
+
+form.patientinfo .dropdown-menu,
+form.patientinfo .btn-group,
+.schedular .dropdown-menu {
+    width: 100%;
+    text-align: left;
+}
+
+.btn-fixedwidth {
+    width: 285px;
+    text-align: left;
+}
+
+.btn-group > .btn,
+.btn-group-vertical > .btn {
+    background: #ebebeb;
+    border: solid 1px #d5d5d5;
+    line-height: 1.2;
+}
+
+form.patientinfo .subtitle {
+    margin-left: 48%;
+    color: #999999;
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+.no-border,
+.btn-group.open .dropdown-toggle.no-border,
+.btn-group > .btn.no-border:focus,
+.btn-group-vertical > .btn.no-border:focus {
+    border: 0 !important;
+    box-shadow: none;
+    background: transparent !important;
+}
+
+.no-border .caret {
+    border-top: 5px solid;
+    border-right: 5px solid transparent;
+    border-left: 5px solid transparent;
+}
+
+.aside-nav .btn.value {
+    width: 177px;
+    text-align: left;
+}
+
+.input-group .icon-addon .form-control {
+    border-radius: 0;
+}
+
+.icon-addon {
+    position: relative;
+    color: #555;
+    display: block;
+}
+
+.icon-addon:after,
+.icon-addon:before {
+    display: table;
+    content: " ";
+}
+
+.icon-addon:after {
+    clear: both;
+}
+
+.icon-addon.addon-md .glyphicon,
+.icon-addon .glyphicon,
+.icon-addon.addon-md .fa,
+.icon-addon .fa {
+    position: absolute;
+    z-index: 2;
+    left: 10px;
+    font-size: 12px;
+    width: 20px;
+    margin-left: -2.5px;
+    text-align: center;
+    padding: 5px 0;
+    top: 1px
+}
+
+.icon-addon.addon-lg .form-control {
+    line-height: 1.33;
+    height: 24px;
+    font-size: 14px;
+    padding: 5px 16px 6px 30px;
+}
+
+.icon-addon.addon-sm .form-control {
+    height: 30px;
+    padding: 5px 10px 5px 28px;
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+.icon-addon.addon-lg .fa,
+.icon-addon.addon-lg .glyphicon {
+    font-size: 13px;
+    margin-left: 0;
+    left: 6px;
+    top: 5px;
+}
+
+.icon-addon.addon-md .form-control,
+.icon-addon .form-control {
+    padding-left: 30px;
+    float: left;
+    font-weight: normal;
+}
+
+.icon-addon.addon-sm .fa,
+.icon-addon.addon-sm .glyphicon {
+    margin-left: 0;
+    font-size: 12px;
+    left: 5px;
+    top: -1px
+}
+
+.icon-addon .form-control:focus + .glyphicon,
+.icon-addon:hover .glyphicon,
+.icon-addon .form-control:focus + .fa,
+.icon-addon:hover .fa {
+    color: #2580db;
+}
+
+/* Table Section */
+
+table.datatable {
+    border: solid 1px #a1acb7;
+    border-radius: 3px;
+    width: 100%;
+    color: #555;
+}
+
+table.datatable th,
+table.datatable td {
+    padding: 5px 10px;
+    color: #686868;
+    font-weight: 500;
+    font-size: 14px;
+    border-bottom: solid 1px #a1acb7;
+    border-right: solid 1px #a1acb7;
+}
+
+table.datatable td {
+    background: #f1f4f8;
+}
+
+/* Existing Css Changes */
+
+p.module-title,
+p.form-legend,
+a.form-legend {
+    font-family: inherit;
+    font-weight: 200;
+    line-height: 1.1;
+    color: #555;
+    margin-top: 9.5px;
+    margin-bottom: 5px;
+    font-size: 18px;
+    border-bottom: 1px solid #e2e3e4;
+    padding: 7px 0 7.5px 0;
+    font-weight: 400
+}
+
+.content-container {
+    height: 89%;
+}
+
+.form-horizontal .control-label,
+.form-horizontal .radio,
+.form-horizontal .checkbox,
+.form-horizontal .radio-inline,
+.form-horizontal .checkbox-inline {
+    padding-top: 1px;
+}
+
+/* Customize Modal Window CSS */
+
+.modal-header {
+    padding: 0px 15px;
+    color: #fff;
+    border-radius: 5px 5px 0px 0px;
+    background: #515151;
+    /* Old browsers */
+    background: -moz-linear-gradient(top, #515151 0%, #000000 99%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #515151 0%, #000000 99%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #515151 0%, #000000 99%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#515151', endColorstr='#000000', GradientType=0);
+    /* IE6-9 */
+}
+
+.panel-heading {
+    padding: 4px 15px;
+}
+
+.panel-group .panel + .panel {
+    margin-top: -1px;
+}
+
+.panel-group .panel {
+    border-radius: 0px;
+}
+
+.modal .modal-dialog {
+    margin-top: 157px!important;
+}
+
+.modal-content {
+    background: #fff;
+}
+
+.modal-body {
+    padding: 10px 10px 0px 10px;
+}
+
+.modal-footer {
+    padding: 6px 20px 6px;
+    overflow: hidden;
+}
+
+h4.modal-title {
+    color: #fff;
+}
+/* Customize Modal Window CSS End*/
+
+.topbar-blocks {
+    padding: 10px;
+}
+
+.topbar-blocks .caret {
+    margin: 0px;
+}
+
+rect.highcharts-point {
+    width: 7px;
+    height: 20px;
+}
+
+.highcharts-container {
+    width: 100% !important;
+}
+
+table.datatable td {
+    text-align: center;
+}
+
+.mini-card {
+    border: 0 !important;
+}
+
+.mini-card .title {
+    padding: 5px 0;
+}
+.dentist .infocard{
+    width: 250px;
+}
+.tretplanlist{
+    padding:5px;
+}
+.tretplanlist.active{background: #e9f2f8;}
+.tretplanlist:hover{
+    background: #f0f6fa;
+}
+.tretplanlist .planid{
+    font-size: 16px;
+}
+.leftcolumn{
+    padding-right: 10px;border-right: solid 2px #ccc;
+}
+.rightcolumn{
+    padding-left: 5px;
+}
+.Select-placeholder {
+    line-height: 24px!important;
+    text-indent: 18px;
+}
+.Select-clear{
+    color:#3d3d3d;
+    font-size: 21px!important;
+    font-weight: bold;
+}
+.dentist.content-container{
+    height: 100%;
+}
+
+.nav-tabs .glyphicon-plus{
+    -moz-transform:rotate(45deg);
+    -webkit-transform:rotate(45deg);
+    -o-transform:rotate(45deg);
+    -ms-transform:rotate(45deg);
+    -ms-filter: "progid:DXImageTransform.Microsoft.Matrix(SizingMethod='auto expand', M11=0.7071067811865476, M12=-0.7071067811865475, M21=0.7071067811865475, M22=0.7071067811865476)";
+}
+.nav-tabs li.active .glyphicon-plus{
+    -moz-transform:rotate(0deg);
+    -webkit-transform:rotate(0deg);
+    -o-transform:rotate(0deg);
+    -ms-transform:rotate(0deg);
+    -ms-filter: "progid:DXImageTransform.Microsoft.Matrix(SizingMethod='auto expand', M11=0.7071067811865476, M12=-0.7071067811865475, M21=0.7071067811865475, M22=0.7071067811865476)";
+}
+
+  @media (min-height: 768px) and (max-height: 800px) {
+    #redips-drag  table tbody {
+        height: 60vh;
+    }
+}
+.maxwidth{
+    max-width:80%;
+}
+.highcharts-container{height:185px!important; }
+.graphsection{width: 605px;}
+/*---------------- component common css--------------------------------------*/
+
+/* Added New */
+
+.topbar-blocks {
+    padding-top: 10px;
+}
+
+.patientdetail .topbar-blocks {
+    padding:0;
+}
+.topbar-blocks .caret {
+    margin-top: -3px;
+}
+
+#redips-drag table{
+    width: 100%;
+}
+
+#redips-drag  table thead, #redips-drag  table tbody {
+    display: block;
+}
+#redips-drag  table tbody {
+    overflow: auto;
+    overflow-x: hidden;
+    border: solid 1px #929292;
+    height: 66.6vh;
+    padding: 3px;
+}
+
+#redips-drag  table tr {
+    width: 100%;
+    display: table;
+    text-align: left;
+}
+
+.longText{
+    margin:0;
+    font-size:18px;
+    font-weight:500;
+    color:#555;
+}
+.longText span{
+    font-size:12px;
+    font-weight:normal;
+    color:#999;
+}
+.nobMargin{
+    margin-bottom:7px;
+}
+/* Override */
+.Select-control {
+    height:22px !important;
+}
+
+.Select--single > .Select-control .Select-value  {
+    line-height:26px !important;text-indent: 15px;
+}
+
+.Select-input {
+    height:22px !important;text-indent: 15px;
+}
+.modal-footer {
+    padding-left:10px !important;
+}
+.zindex{z-index: 0;}

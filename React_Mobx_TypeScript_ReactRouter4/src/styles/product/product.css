@@ -1,0 +1,31 @@
+.item-card{
+    width: 40vw;
+    height: 50vw;
+    min-height: 220px;
+    display: inline-block;
+    position: relative;
+    width: 206px;
+    height: 336px;
+    vertical-align: top;
+    background: #fff;
+    border: 1px solid #e5edec;
+    text-align: left;
+    color: #5a5a5a;
+    font-weight: 400;
+    margin: 0 -1px -1px 0;
+    cursor: pointer;
+    white-space: initial;
+}
+
+.item-price{
+    display: inline-block;
+    margin-bottom: 3px;
+    color: black;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.item-image{
+    width: 20vw;
+    height: 20vw;
+}

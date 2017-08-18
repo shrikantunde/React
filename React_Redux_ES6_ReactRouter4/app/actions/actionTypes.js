@@ -1,0 +1,6 @@
+
+export const LOAD_ROBOT = 'LOAD_ROBOT';
+export const LOAD_SHIPPING_DATA='LOAD_SHIPPING_DATA';
+export const BUTTON_CLICK='BUTTON_CLICK'; 
+export const FORM_SUBMIT='FORM_SUBMIT';
+export const GET_COMMODITY='GET_COMMODITY';

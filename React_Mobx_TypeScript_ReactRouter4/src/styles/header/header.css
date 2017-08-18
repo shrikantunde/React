@@ -1,0 +1,56 @@
+
+.header {
+    height: 100px;
+}
+
+.spacing {
+    margin-right: 10px;
+}
+
+.innerImage{
+background-image: url('./../../assets/images/account_open.png');
+    background-size: 100% 100%;
+    width: 40%;
+    height: 50%;
+    background-repeat: no-repeat;
+}
+
+.logoDemo{
+    background-image: url('./../../assets/images/nikita.gif');
+    background-size: 106px 60px;
+    width: 106px;
+    height: 60px;
+    background-repeat: no-repeat;
+}
+
+.actionfield {
+    /* float: right; */
+    padding-top: 10px;
+    margin-right: 15px;
+    padding-left: 9px;
+    right: 0px;
+    height: 50px;
+    position: absolute;
+    z-index: 1000;
+    background: #fff;
+}
+
+.actionmenu {
+    border-radius: 5px;
+    padding: 0px;
+    margin-left: 5px;
+}
+
+.actionmenu:hover {
+    background: #e1eaf1;
+    border-radius: 5px;
+}
+
+.actionmenu button {
+    color: #06c;
+    font-size: 14px;
+}
+
+.actionmenu:hover button {
+    color: #004080;
+}

@@ -1,0 +1,9 @@
+{
+    "rules": {
+        "class-name": true,
+        "no-eval": true,
+        "no-internal-module": true,
+        "no-unsafe-finally": true,
+        "no-var-keyword": true  
+    }
+}

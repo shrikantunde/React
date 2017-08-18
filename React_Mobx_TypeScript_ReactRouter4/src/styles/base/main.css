@@ -1,0 +1,681 @@
+﻿@page {
+    size: auto;
+    margin: 6mm;
+}
+
+body {
+    /*font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;*/
+    color: #333;
+    padding: 0px !important;
+    margin: 0px !important;
+    font-size: 13px;
+    -webkit-font-smoothing: antialiased;
+    /* disable vertical scrollbar of body, we only have scrollbar on content area */
+    overflow-y: hidden;
+}
+
+a {
+    color: #0066CC;
+    text-decoration: none;
+}
+
+.pageContent{
+    margin-top: 110px;
+}
+
+a:hover, a:focus {
+    color: #0066CC;
+    text-decoration: none;
+}
+
+/* Framework layout */
+.header {
+    position: fixed;
+    height: 50px;
+    background: transparent;
+    width: 100%;
+}
+
+.navigator {
+    position: fixed;
+    /*height: 80px;*/
+    top: 50px;
+    width: 100%;
+}
+
+.rightsection {
+    display: flex;
+}
+
+.content {
+    position: fixed;
+    top: 110px;
+    bottom: 20px;
+    width: 100%;
+}
+
+.content-html {
+    width: 100%;
+    height: 100%;
+}
+
+.pg-content {
+    width: 100%;
+    height: 100%;
+    /* 75px is the height of .pg-header */
+    padding-bottom: 75px;
+}
+
+.content-container {
+    overflow: scroll;
+    overflow-x: hidden;
+    overflow-y: auto;
+    width: 100%;
+    height: 100%;
+}
+
+.main-footer {
+    position: fixed;
+    height: 20px;
+    bottom: 0;
+    background: #a8a8a8;
+    width: 100%;
+    font-size: 12px;
+    padding: 0 5px 0 5px;
+}
+
+.link-host {
+    height: 100%;
+    margin-top: 10px;
+    display: inline-block;
+}
+
+.link-host a {
+    margin: 0 5px 0 5px;
+    float: right;
+}
+
+.layer-top {
+    z-index: 1000;
+}
+
+.layer-top-middle {
+    z-index: 100;
+}
+
+.layer-middle {
+    z-index: 0;
+}
+
+.layer-middle-bottom {
+    z-index: -100;
+}
+
+.layer-bottom {
+    z-index: -9999;
+}
+
+/* remove white border*/
+.modal-content {
+    background-color: #fff;
+    border: none;
+}
+
+/*popup dialog style*/
+.modal .modal-dialog {
+    margin-top: 133px;
+}
+
+#actions-menu {
+    width: 250px;
+    height: 100%;
+    position: fixed;
+    background: #EEE;
+    overflow-y: scroll;
+}
+
+aside.sidepanel {
+    z-index: 1002;
+}
+
+.sidepanel-button {
+    top: 190px;
+    margin-bottom: 20px;
+}
+
+.sidepanel:before {
+    top: 190px;
+    bottom: 20px;
+}
+
+.mini-card {
+    height: 74px;
+}
+
+#main-content {
+    margin-left: 250px;
+    padding-bottom: 50px;
+}
+
+.wrapper {
+    display: inline-block;
+    /*margin-top: 182px;*/
+    padding: 10px;
+    padding-left: 20px;
+    width: 100%;
+    background-color: #fff;
+}
+
+.mrg-top-unify {
+    margin-top: 182px;
+}
+
+.pg-header > .mini-card {
+    width: 255px;
+    min-height: 70px;
+    border-right: 1px solid #999;
+}
+
+.image_avatar {
+    position: relative;
+    top: 3px;
+    width: 45px;
+    height: 45px;
+    border: 1px solid #999;
+    margin-right: 10px;
+    z-index: 100;
+}
+
+/* Global and Section or Div Dependant Font Styles */
+
+.pg-title {
+    margin-left: 295px;
+}
+
+.pg-title h3 {
+    margin-top: 5px;
+}
+
+.aside-nav > h5, .main > h5 {
+    border-bottom-color: #999;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    padding-bottom: 10px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.aside-nav > ul.nav > li > a {
+    position: relative;
+    left: -5px;
+}
+
+.mini-card ul li {
+    padding: 0;
+}
+
+.mini-card ul ul li {
+    position: relative;
+    top: -3px;
+}
+
+.mini-card ul ul li a {
+    padding: 2px 5px;
+    position: relative;
+    left: -5px;
+    margin-bottom: -3px;
+}
+
+.minicard-itemhover {
+    background-color: #f0f6fa;
+}
+
+.minicard-itemselect {
+    background-color: #e1edf5;
+}
+
+.aside-nav > ul.nav.nav-pills > li.active > a,
+.aside-nav > ul.nav.nav-pills > li.active > a:hover,
+.aside-nav > ul.nav.nav-pills > li.active > a:focus {
+    background-color: #608FB7;
+    color: #FFF;
+    font-weight: 500;
+}
+
+.iconClose {
+    float: right;
+    color: #fff;
+}
+
+.global-patient-search {
+    float: left;
+}
+
+.popover {
+    max-width: none;
+}
+
+.text-truncate {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: inline-block;
+    vertical-align: middle;
+    font-weight: inherit;
+}
+
+.table-ellipsis {
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: left;
+}
+
+.search-text-highlight {
+    color: #f99006;
+    font-style: normal;
+}
+
+.yellow-bar {
+    position: fixed;
+    left: 5px;
+    top: 110px;
+    height: 40px;
+    z-index: 10000;
+}
+
+.overflow-hidden {
+    overflow: hidden;
+}
+
+form.userchoose,
+form.loginfull,
+form.login,
+form.forgot_password,
+form.email_sent,
+form.forgot_fivetimes {
+    display: none;
+}
+
+.csd-arrow.csd-arrow-top-left {
+    top: -11px;
+    left: 25%;
+    transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    /* IE 9 */
+    -webkit-transform: rotate(90deg);
+    /* Opera, Chrome, and Safari */
+}
+
+.first.last {
+    border-left-width: 1px;
+}
+
+.checkout-minicard li {
+    height: 12px;
+    line-height: 100%;
+}
+
+.checkout-queue, .checkout-slick {
+    position: absolute;
+    top: 0;
+}
+
+.checkout-queue {
+    left: 135px;
+}
+
+.checkout-queue-label {
+    position: relative;
+    top: 10px;
+    left: 15px;
+}
+
+.checkout-slick {
+    left: 155px;
+    width: 550px;
+    height: 40px;
+}
+
+#beta-checkout {
+    position: absolute;
+    list-style-type: none;
+}
+
+.checkout-slick-prev,
+.checkout-slick-next {
+    position: absolute;
+    top: 0;
+    height: 40px;
+    background-color: #F0F0F0;
+    padding: 12px 0 0 2px;
+    width: 20px;
+    color: #666;
+    cursor: pointer;
+}
+
+.checkout-slick-prev {
+    left: -20px;
+    border: 0px solid #999;
+    border-left-width: 1px;
+    border-right-width: 1px;
+    border-bottom-width: 1px;
+    -webkit-border-bottom-left-radius: 3px;
+    -moz-border-radius-bottomleft: 3px;
+    border-bottom-left-radius: 3px;
+}
+
+.checkout-slick-next {
+    right: -20px;
+    border: 0px solid #999;
+    border-left-width: 0;
+    border-right-width: 1px;
+    border-bottom-width: 1px;
+    -webkit-border-bottom-right-radius: 3px;
+    -moz-border-radius-bottomright: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+.checkout-slick-prev.slick-disabled:before,
+.checkout-slick-next.slick-disabled:before {
+    opacity: 0.25;
+}
+
+.checkout-glyphicon-container {
+    width: 13px;
+    display: inline-block;
+}
+
+#alpha-checkout {
+    border: 1px solid #999;
+    width: 28px;
+    height: 28px;
+}
+
+img.checkout {
+    border: 0;
+}
+
+img.checkout.active {
+    border: 2px solid #ffcc00;
+}
+
+.checkout-popup-title {
+    width: 240px;
+}
+
+.patient-search-list #beta {
+    width: 220px;
+}
+
+th.tablesort-sortable {
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+    cursor: pointer;
+}
+
+table .tablesort-sortable:after {
+    content: "";
+    float: right;
+    margin-top: 7px;
+    visibility: hidden;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-top: none;
+    border-bottom: 4px solid #000;
+}
+
+table .tablesort-desc:after {
+    border-top: 4px solid #000;
+    border-bottom: none;
+}
+
+table .tablesort-asc, table .tablesort-desc {
+    background-color: rgba(141, 192, 219, 0.25);
+}
+
+table .tablesort-sortable:hover:after, table .tablesort-asc:after, table .tablesort-desc:after {
+    visibility: visible;
+}
+
+/*
+ * Styling for the table row shown in empty tables
+ */
+
+/* The row is always added as the first row in a table
+   Hide it by default */
+.showIfLast {
+    display: none;
+}
+
+/* Only show it if it is also the last row of the table. */
+.showIfLast:last-child {
+    display: table-row;
+}
+
+.showIfLast td {
+    text-align: center;
+}
+
+.showIfLast td:after {
+    content: "No data";
+}
+
+.displayTableRow {
+    display: table-row;
+}
+
+.displayNone {
+    display: none;
+}
+
+.fontBold {
+    font-weight: bolder;
+}
+
+.listitem-hover {
+    background-color: #f0f6fa;
+}
+
+/*FIXED table header USE START */
+.fixed-table {
+    top: 188px;
+    position: fixed;
+    width: auto;
+    display: none;
+    z-index: 1;
+}
+
+.fixed-container {
+    width: 100%;
+    margin: auto;
+}
+
+.tooltip-table {
+    background-color: #f7f8fa;
+    width: 100%;
+}
+
+.tooltip {
+    word-wrap: break-word;
+    padding: 0;
+    margin: 0;
+}
+
+.fixed-article {
+    margin-top: 0 !important;
+    margin: auto;
+    overflow-y: auto;
+    top: 80px;
+    width: auto;
+}
+
+.down-arrow {
+    display: inline-block !important;
+}
+
+.up-arrow {
+    display: none !important;
+}
+
+.open > .dropdown-toggle > .col-xs-12 > .down-arrow {
+    display: none !important;
+}
+
+.open > .dropdown-toggle > .col-xs-12 > .up-arrow {
+    display: inline-block !important;
+}
+
+/*END*/
+
+.busy-indicator-container {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: lightgray;
+    opacity: 0.8;
+    z-index: 99999;
+}
+
+.busy-indicator {
+    background: white;
+    border-radius: 1em;
+    border: solid 1px;
+    padding: 1em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    z-index: 99999;
+}
+
+.no-results-msg {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.csd-popup-dialog .popup-content .image-upload-dialog-content {
+    height: 94px;
+}
+
+/* set all placeholder style */
+::-webkit-input-placeholder {
+    font-style: italic;
+}
+
+::-moz-placeholder {
+    font-style: italic;
+}
+
+/* firefox 19+ */
+:-moz-placeholder {
+    font-style: italic;
+}
+
+/* Firefox 18- */
+:-ms-input-placeholder {
+    font-style: italic;
+}
+
+/* ie */
+.ui-select-match > .select2-chosen:first-child {
+    font-style: italic;
+}
+
+/*ui-select*/
+
+/*for custom popup title*/
+.popup-title {
+    margin: 0;
+    padding: 8px 0px;
+    font-size: 13px;
+    font-weight: normal;
+    line-height: 18px;
+    background-color: #f7f7f7;
+    border-bottom: 1px solid #ebebeb;
+    border-radius: 5px 5px 0 0;
+}
+
+h3.popup-title {
+    background-color: #FFF !important;
+    border-bottom-color: #999;
+    font-weight: 600;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 8px 0px;
+}
+
+.wordwrap {
+    white-space: pre-wrap; /* CSS3 */
+    white-space: -moz-pre-wrap; /* Firefox */
+    white-space: -pre-wrap; /* Opera <7 */
+    white-space: -o-pre-wrap; /* Opera 7 */
+    word-wrap: break-word; /* IE */
+}
+
+.btn:focus,
+.btn:active:focus,
+.btn.active:focus {
+    outline: none;
+}
+
+.recall-popup.rightTop {
+    margin-left: 15px;
+}
+
+.recall-popup.leftTop {
+    margin-left: -15px;
+}
+
+.thumbnail .image-detail-thumbnail {
+    height: 189px;
+}
+
+.note-input-textarea {
+    -moz-resize: none;
+    resize: none;
+    overflow-x: hidden;
+}
+
+.clinical-image-selected {
+    background-color: #000;
+    border-color: #111;
+}
+
+.btn-link.whitea:hover {
+    background-color: #666;
+    color: white !important;
+}
+
+.btn-link.whitea {
+    color: white !important;
+}
+
+.note-container {
+    height: 100%;
+    position: relative;
+}
+
+.note-list {
+    overflow-x: hidden;
+    overflow-y: auto;
+    width: 100%;
+    position: absolute;
+    top: 44px;
+    bottom: 0px;
+}
+
+.disabledli a:hover {
+    background-color: transparent !important;
+}
+
+::-ms-clear {
+    display: none;
+}
